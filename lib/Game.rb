@@ -3,9 +3,9 @@ class Game
   def initialize 
     @score = []
   end
-  def roll(num)
-    @score.push(num)
-    num
+  def roll(pins)
+    @score.push(pins)
+    pins
   end
 
   def score 
