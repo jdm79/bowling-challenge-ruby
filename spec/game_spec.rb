@@ -30,4 +30,16 @@ describe "bowling" do
       expect(game.score()).to eq 0
     end
   end
+
+  describe "all ones" do
+    game = Game.new
+    it "should returns the score of 20 for an all ones game" do
+      game = Game.new
+      20.times do
+        game.roll(1)
+      end
+      expect(game.score()).to eq 20
+    end
+  end
+
 end
