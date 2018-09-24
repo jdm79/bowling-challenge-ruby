@@ -19,4 +19,15 @@ describe "bowling" do
       expect(game.score()).to eq 22
     end
   end
+
+  describe "gutter game" do
+    game = Game.new
+    it "should returns the score of 0 for a gutter game" do
+      game = Game.new
+      20.times do
+        game.roll(0)
+      end
+      expect(game.score()).to eq 0
+    end
+  end
 end
